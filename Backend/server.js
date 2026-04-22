@@ -12,7 +12,8 @@ const app = express()
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://ipd-1-ogw5.onrender.com'
+    'https://ipd-1-ogw5.onrender.com',
+    'https://fyp-host-frontend.onrender.com'
   ],
   credentials: true
 }))
