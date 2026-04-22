@@ -8,7 +8,7 @@ const SubjectDetails = ({ subject }) => {
   const handleClick = async () => {
     if (!user) return
 
-    const response = await fetch('http://localhost:5050/api/subjects/' + subject._id, {
+    const response = await fetch('https://fyp-host-backend.onrender.com/api/subjects/' + subject._id, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${user.token}`

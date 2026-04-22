@@ -21,7 +21,7 @@ const SubjectForm = () => {
 
     const subject = { title, description }
 
-    const response = await fetch('http://localhost:5050/api/subject', {
+    const response = await fetch('https://fyp-host-backend.onrender.com/api/subject', {
       method: 'POST',
       body: JSON.stringify(subject),
       headers: {

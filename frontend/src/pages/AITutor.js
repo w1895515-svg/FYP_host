@@ -20,7 +20,7 @@ const AITutor = ({ subject = "general", topic = "general" }) => {
 
     try {
       const response = await fetch(
-        'http://localhost:5050/api/chat',
+        'https://fyp-host-backend.onrender.com/api/chat',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
